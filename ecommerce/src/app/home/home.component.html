@@ -1,0 +1,11 @@
+<body style="background-image: url('../assets/img/back.jpg');">
+  <mat-toolbar class="navbar">
+    <img src="../assets/img/logo.png" style="border-radius: 50%;" alt="Logo" class="logo">
+    <span class="navbar-brand">Ecommerce</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/order" routerLinkActive="active" class="custom-button">Rastrear Pedido</button>
+    <button mat-button (click)="openSignupDialog()" class="custom-button">Registrar</button>
+    <button mat-button (click)="openForgotPasswordDialog()" class="custom-button">Esquecer Senha</button>
+    <button mat-button (click)="openLoginDialog()" class="custom-button">Login</button>
+  </mat-toolbar>
+</body>

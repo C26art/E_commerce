@@ -1,0 +1,16 @@
+<body style="background-image: url('../assets/img/dashboard.jpg');">
+  <mat-toolbar class="navbar">
+    <img src="../assets/img/logo.png" style="border-radius: 50%;" alt="Logo" class="logo">
+    <span class="navbar-brand">Ecommerce</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/customer/dashboard" routerLinkActive="active" class="custom-button">Dashboard</button>
+    <button mat-button routerLink="/customer/cart" routerLinkActive="active" class="custom-button">Carrinho</button>
+    <button mat-button routerLink="/customer/my_orders" routerLinkActive="active" class="custom-button">Pedidos</button>
+    <button mat-button routerLink="/customer/wishlist" routerLinkActive="active" class="custom-button">Lista de Desejos</button>
+    <button mat-button routerLink="/customer/profile" routerLinkActive="active" class="custom-button">Perfil</button>
+    <button mat-button (click)="logout()" class="custom-button">
+      Logout
+      <mat-icon class="logout-icon">exit_to_app</mat-icon>
+    </button>
+  </mat-toolbar>
+</body>

@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+
+  mat-card {
+    width: 100%;
+    max-width: 400px;
+
+    .full-width {
+      width: 100%;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      margin-top: 1rem;
+      border-radius: 4px;
+      color: antiquewhite;
+      background: rgb(38, 38, 207);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background: rgb(223, 73, 73);
+      color: white;
+    }
+
+    .wram{
+      width: 100%;
+      margin-top: 1rem;
+      border-radius: 4px;
+      color: antiquewhite;
+      background: rgb(240, 14, 14);
+      transition: background-color 0.3s, color 0.3s;
+    }
+  }
+}
+
+mat-card-title {
+  text-align: center;
+  color: blue;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .container {
+    mat-card {
+      padding: 1rem;
+    }
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .container {
+    mat-card {
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    mat-card {
+      padding: 1rem 3rem;
+    }
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: blue;
+}

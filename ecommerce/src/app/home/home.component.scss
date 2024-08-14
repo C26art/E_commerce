@@ -1,0 +1,107 @@
+$primary-color: #3f51b5;
+$accent-color: #e91e63;
+$warn-color: #f44336;
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: $primary-color;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  .logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .custom-button {
+    color: white;
+    background-color: $accent-color;
+    border-radius: 4px;
+    margin-left: 10px;
+
+    &:hover {
+      background-color: darken($accent-color, 10%);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+
+    .logo {
+      height: 30px;
+      margin: 10px 0;
+    }
+
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+
+    .custom-button {
+      margin: 5px 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .navbar {
+    padding: 0 15px;
+
+    .logo {
+      height: 35px;
+    }
+
+    .navbar-brand {
+      font-size: 1.3rem;
+    }
+
+    .custom-button {
+      margin-left: 5px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 0 15px;
+
+    .logo {
+      height: 38px;
+    }
+
+    .navbar-brand {
+      font-size: 1.4rem;
+    }
+
+    .custom-button {
+      margin-left: 8px;
+    }
+  }
+}
+
+html, body {
+  height: 100%;
+}
